@@ -1,28 +1,28 @@
 // displays the largest number
-# include <stdio.h>
-int main(){
-    int catmarks[6] = {12,23,45,56,77,8} ;
-    int largest = catmarks[0];
-    for(int i = 1 ; i<=5; i ++ ){
-        if (catmarks[i]>largest){
-            largest = catmarks[i];
-        }
-    }
-    printf("%d\n",largest);
-}
+// # include <stdio.h>
+// int main(){
+//     int catmarks[6] = {12,23,45,56,77,8} ;
+//     int largest = catmarks[0];
+//     for(int i = 1 ; i<=5; i ++ ){
+//         if (catmarks[i]>largest){
+//             largest = catmarks[i];
+//         }
+//     }
+//     printf("%d\n",largest);
+// }
 
 // displays the smallest number
 # include <stdio.h>
-int main(){
-    int catmarks[6] = {12,23,45,56,77,8} ;
-    int largest = catmarks[0];
-    for(int i = 1 ; i<=5; i ++ ){
-        if (catmarks[i]<largest){
-            largest = catmarks[i];
-        }
-    }
-    printf("%d\n",largest);
-}
+// int main(){
+//     int catmarks[6] = {12,2,45,56,77,10} ;
+//     int smallest = catmarks[0];
+//     for(int i = 1 ; i<=5; i ++ ){
+//         if (catmarks[i]<smallest){
+//             smallest = catmarks[i];
+//         }
+//     }
+//     printf("%d\n",smallest);
+// }
 
 
 //calculates the sum of the numbers in the array
@@ -41,33 +41,35 @@ int main(){
 // # include <stdio.h>
 // int main(){
 //     int catmarks[6] = {12,23,45,56,77,8} ;
-//     int sum = 0 ;
-//     int count = 0 ;
+//     double sum = 0 ;
+//     double count = 0 ;
 //     for(int i = 0 ; i<=5; i ++ ){
 //           sum += catmarks[i];
 //           count++;
 // }
-//    printf("The Average of the array is %d" , sum/count);
+//    printf("The Average of the array is %f" , sum/count);
 
 // }
 
 
 //using dynamic arrays!!!!
 
-// #include <stdio.h>
-// int main(){
-//     int catmarks [6];
-//     int sum = 0 ;
-//     printf("Please key in the elements:  \n");
-//     for(int i = 0; i <= 5; i ++ ){
-//          scanf("%d",&catmarks[i]);
-//          sum += catmarks[i];
+#include <stdio.h>
+int main(){
+    int catmarks [6];
+    int sum = 0 ;
+    double count = 0 ;
+    printf("Please key in the elements:  \n");
+    for(int i = 0; i <= 5; i ++ ){
+         scanf("%d",&catmarks[i]);
+         sum += catmarks[i];
+         count ++;
+    }
+    printf("The second element you keyed in was: %d\n",catmarks[1]);
+    printf("The sum of the elements is: %d\n",sum);
+    printf("The Average of the elements is: %f\n ",sum/count);
 
-//     }
-//     printf("The second element you keyed in was: %d",catmarks[1]);
-//     printf("The sum of the elements is: %d",sum);
-
-// }
+}
 
 
 

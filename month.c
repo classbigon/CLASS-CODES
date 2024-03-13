@@ -2,10 +2,10 @@
 int main(){
     int num;//initiates the month number
     printf("Provide a number to represent a month: \n");
-    scanf("%d\n",&num);
+    scanf("%d",&num);
     switch (num) {
         case 1:{
-            printf("This represents January \n");
+            printf("This represents January ");
             break;
         }   
         case 2:
