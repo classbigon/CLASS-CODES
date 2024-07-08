@@ -4,10 +4,9 @@ int main(){
     printf("Provide a number to represent a month: \n");
     scanf("%d",&num);
     switch (num) {
-        case 1:{
+        case 1 :
             printf("This represents January ");
-            break;
-        }   
+            break; 
         case 2:
             printf("This represents February");
             break;
