@@ -1,6 +1,4 @@
-# Step 1: Import necessary libraries
 import csv
-import numpy as np
 
 # Step 2: Define a function to read grades from a CSV file
 def read_grades_from_csv(file_path):
@@ -14,7 +12,7 @@ def read_grades_from_csv(file_path):
 
 # Step 3: Calculate the mean grade for each student
 def calculate_mean_grades(grades):
-    mean_grades = [np.mean(student_grades) for student_grades in grades]
+    mean_grades = [sum(student_grades) / len(student_grades) for student_grades in grades]
     return mean_grades
 
 # Step 4: Award degrees based on mean grade
@@ -24,11 +22,11 @@ def award_degrees(mean_grades):
         if grade >= 70:
             degrees.append('First Class')
         elif grade >= 60:
-            degrees.append('Upper Second Class')
+            degrees.append('Second Class Upper')
         elif grade >= 50:
-            degrees.append('Lower Second Class')
+            degrees.append('Second Class Lower')
         elif grade >= 40:
-            degrees.append('Third Class')
+            degrees.append('Pass')
         else:
             degrees.append('Fail')
     return degrees
@@ -43,4 +41,4 @@ def process_student_grades(file_path):
 
 # Assuming the CSV file is named 'student_grades.csv' and located in the same directory as this script
 if __name__ == "__main__":
-    process_student_grades('student_grades.csv')
+    process_student_grades('student.csv')

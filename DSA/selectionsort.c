@@ -16,7 +16,6 @@ void selectionSort(int arr[], int n) {
             temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
-            dsd;;
         }
     } // Add the closing brace for the for loop
 
@@ -25,14 +24,11 @@ void selectionSort(int arr[], int n) {
     for (int k = 0; k < n; k++) {
         printf("%d ", arr[k]);
     }
+     printf("\n");
         }
-        printf("\n");
-    }
-}
-
+       
 int main() {
     int n, i;
-    
     // User input for the number of elements
     printf("Enter number of elements: ");
     scanf("%d", &n);
