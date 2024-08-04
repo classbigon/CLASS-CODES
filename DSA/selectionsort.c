@@ -40,6 +40,8 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+
+
     
     // Sorting the array using selection sort
     selectionSort(arr, n);
@@ -52,3 +54,5 @@ int main() {
     
     return 0;
 }
+
+//Really enjoying data structures and algorithims!! One day wll remeber these days --Nyeri --Dedan Kimathi University Of Technology
